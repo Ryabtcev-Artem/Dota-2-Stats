@@ -19,18 +19,21 @@ export default function Heroes(props) {
         const currRole = sortRoles.indexOf("active");
         if (currRole === 0) {
             const maxValues = localStorage.getItem("maxValues");
-            const { maxMatches, maxWinrate } = JSON.parse(maxValues);
-            for (let i = 0; i < allHeroes.length; i++) {
-                allHeroes[i].heroMatches = allHeroes[i].heroAllMatches;
-                allHeroes[i].heroWinrateNumber =
-                    allHeroes[i].heroAllWinrateNumber;
-                allHeroes[i].heroMatchesToMax =
-                    (allHeroes[i].heroMatches / maxMatches) * 100;
-                allHeroes[i].heroWinrateToMax =
-                    (allHeroes[i].heroWinrateNumber / maxWinrate) * 100;
+            if (!maxValues) {
+            } else {
+                const { maxMatches, maxWinrate } = JSON.parse(maxValues);
+                for (let i = 0; i < allHeroes.length; i++) {
+                    allHeroes[i].heroMatches = allHeroes[i].heroAllMatches;
+                    allHeroes[i].heroWinrateNumber =
+                        allHeroes[i].heroAllWinrateNumber;
+                    allHeroes[i].heroMatchesToMax =
+                        (allHeroes[i].heroMatches / maxMatches) * 100;
+                    allHeroes[i].heroWinrateToMax =
+                        (allHeroes[i].heroWinrateNumber / maxWinrate) * 100;
+                }
+                allHeroes.heroMatches = allHeroes.heroAllMatches;
+                allHeroes.heroWinrateNumber = allHeroes.heroAllWinrateNumber;
             }
-            allHeroes.heroMatches = allHeroes.heroAllMatches;
-            allHeroes.heroWinrateNumber = allHeroes.heroAllWinrateNumber;
         } else {
             let maxMatches = 0;
             let maxWinrate = 0;
