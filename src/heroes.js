@@ -4,7 +4,7 @@ async function getHeroesInfo(heroesTags) {
     let maxMatches = 0;
     try {
         const responseProTracker = await fetch(
-            "https://dota2protracker.com/api/heroes/list"
+            "https://dota-2-stats-server-production.up.railway.app/api/heroes"
         );
         const responseOpenDota = await fetch(
             "https://api.opendota.com/api/heroStats"
