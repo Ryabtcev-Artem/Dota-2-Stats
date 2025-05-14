@@ -1,0 +1,30 @@
+.filter{
+    &__options{
+        border: 6px;
+        background-color: var(--color-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__option{
+        padding-block: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--color-white);
+        border: none;
+        &:hover{
+            color: var(--color-gray-40);
+        }
+        &.matches-date{
+            text-align: center;
+            background-color: var(--color-black);
+        }
+        &:not(:last-child){
+            border-right: 1px solid var(--color-gray-15);
+        }
+    }
+}

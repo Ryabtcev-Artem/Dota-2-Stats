@@ -1,0 +1,54 @@
+.hero {
+    background-color: var(--color-gray-11);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    overflow: hidden;
+    padding: 8px;
+    &:nth-child(2n) {
+        background-color: transparent;
+    }
+    &__preview {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        @media (width <=480.98px) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    &__image {
+        border-radius: 6px;
+    }
+    &__name {
+        color: var(--color-white);
+        font-size: 14px;
+        padding-right: 10px;
+        @media (width <=767.98px) {
+            font-size: 12px;
+        }
+    }
+    &__winrate-bar-wrapper {
+        width: 80%;
+        height: 4px;
+        background-color: var(--color-black);
+        margin-top: 4px;
+    }
+    &__winrate-bar {
+        width: 0;
+        height: 100%;
+        background-color: var(--color-brown-40);
+    }
+    &__matches-bar-wrapper {
+        width: 80%;
+        height: 4px;
+        background-color: var(--color-black);
+        margin-top: 4px;
+    }
+    &__matches-bar {
+        width: 0;
+        height: 100%;
+        background-color: var(--color-brown-40);
+    }
+}
