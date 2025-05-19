@@ -18,6 +18,7 @@ export default function HeroCard(props) {
                     className="hero__image"
                     src={heroImage}
                     alt="hero image"
+                    loading="lazy"
                 />
                 <p className="hero__name">{heroName}</p>
             </div>

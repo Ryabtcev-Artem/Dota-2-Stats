@@ -1,5 +1,5 @@
 import "./Search.scss";
-import search from "../assets/searchImages/search.svg";
+import search from "../../assets/searchImages/search.svg";
 export default function Search(props) {
     
     const { inputText, setInputText } = props

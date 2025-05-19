@@ -1,9 +1,9 @@
 import "./RoleFilter.scss";
-import pos1 from "../assets/rolesImages/pos_1.webp";
-import pos2 from "../assets/rolesImages/pos_2.webp";
-import pos3 from "../assets/rolesImages/pos_3.webp";
-import pos4 from "../assets/rolesImages/pos_4.webp";
-import pos5 from "../assets/rolesImages/pos_5.webp";
+import pos1 from "../../assets/rolesImages/pos_1.webp";
+import pos2 from "../../assets/rolesImages/pos_2.webp";
+import pos3 from "../../assets/rolesImages/pos_3.webp";
+import pos4 from "../../assets/rolesImages/pos_4.webp";
+import pos5 from "../../assets/rolesImages/pos_5.webp";
 export default function RoleFilter(props) {
     const { sortRoles, setSortRoles } = props;
     function onRoleClick(event) {

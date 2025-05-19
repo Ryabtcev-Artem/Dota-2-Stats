@@ -1,6 +1,8 @@
 import "./Header.scss";
-import logo from "../../public/images/main-logo.webp";
-import signIn from "../assets/headerImages/sign-in.svg";
+import logo from "../../../public/images/main-logo.webp";
+import signIn from "../../assets/headerImages/sign-in.svg";
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
     return (
         <header className="header container">
@@ -13,15 +15,18 @@ export default function Header() {
                 alt=""
             />
             <nav className="header__menu">
-                <a href="#" className="header__link active">
+                <NavLink to="/" end className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}>
                     Heroes
-                </a>
-                <a href="#" className="header__link">
+                </NavLink>
+                <NavLink to="/meta" className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}>
                     Meta
-                </a>
-                <a href="#" className="header__link">
+                </NavLink>
+                <NavLink
+                    to="/meta-escape"
+                    className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}
+                >
                     Meta Escape
-                </a>
+                </NavLink>
             </nav>
             <a href="#" className="header__sign-in">
                 <img width={24} height={24} src={signIn} alt="sign in" />

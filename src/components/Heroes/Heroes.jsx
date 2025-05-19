@@ -1,15 +1,18 @@
 import HeroCard from "../Hero/HeroCard";
 import { useState } from "react";
 import { useEffect } from "react";
-import getHeroesInfo from "../heroes";
+import getHeroesInfo from "../../heroes";
 import "./Heroes.scss";
 export default function Heroes(props) {
     const { sortRoles, sortInfo, inputText } = props;
     const [allHeroes, setAllHeroes] = useState([]);
     const [heroes, setHeroes] = useState([]);
+    const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
         async function fetchHeroes() {
+            setIsLoading(true)
             const data = await getHeroesInfo();
+            setIsLoading(false)
             setAllHeroes(data);
             setHeroes(data);
         }
@@ -94,7 +97,7 @@ export default function Heroes(props) {
             <div className="heroes__explanation">
                 Showing Pub Data from last 8 days
             </div>
-            <div className="heroes-wrapper">
+            <div className={`heroes-wrapper ${isLoading ? "loading" : ""}`}>
                 {heroes.map((hero) => (
                     <HeroCard
                         key={hero.id}

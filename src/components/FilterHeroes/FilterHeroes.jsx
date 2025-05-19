@@ -1,7 +1,7 @@
 import "./FilterHeroes.scss";
-import upDownArrow from "../assets/filterImages/up-down-arrow.svg";
-import downArrow from "../assets/filterImages/down-arrow.svg";
-import upArrow from "../assets/filterImages/up-arrow.svg";
+import upDownArrow from "../../assets/filterImages/up-down-arrow.svg";
+import downArrow from "../../assets/filterImages/down-arrow.svg";
+import upArrow from "../../assets/filterImages/up-arrow.svg";
 import { useState } from "react";
 export default function FilterHeroes(props) {
     const { sortInfo, setSortInfo } = props;

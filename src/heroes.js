@@ -66,40 +66,5 @@ async function getHeroesInfo(heroesTags) {
         maxWinrate: maxWinrate
     }));
     return heroes.sort((a, b) => -a.heroWinrateNumber + b.heroWinrateNumber);
-    // .sort((a, b) => a.heroName.localeCompare(b.heroName));
 }
 export default getHeroesInfo;
-
-// [    {
-//         id: 1,
-//         heroName: "Al Pudgino",
-//         heroWinrateNumber: 48.8,
-//         heroWinrateDiagram: "./assets/.svg",
-//         heroImage: pudge,
-//         heroMatches: 3603,
-//     },
-//     {
-//         id: 2,
-//         heroName: "Riki Maru",
-//         heroWinrateNumber: 48.3,
-//         heroImage: riki,
-//         heroWinrateDiagram: "./assets/.svg",
-//         heroMatches: 596,
-//     },
-//     {
-//         id: 3,
-//         heroName: "Spirit Breaker",
-//         heroWinrateNumber: 52.8,
-//         heroImage: bara,
-//         heroWinrateDiagram: "./assets/.svg",
-//         heroMatches: 1201,
-//     },
-//     {
-//         id: 4,
-//         heroName: "Venomancer",
-//         heroWinrateNumber: 45.4,
-//         heroImage: veno,
-//         heroWinrateDiagram: "./assets/.svg",
-//         heroMatches: 689,
-//     },
-// ];
