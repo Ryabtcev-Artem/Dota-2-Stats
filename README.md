@@ -1,4 +1,4 @@
-# 🎯 Dota 2 Stats
+![image](https://github.com/user-attachments/assets/11d3af3c-700e-45d8-b2d5-09bae68697f6)# 🎯 Dota 2 Stats
 
 A web application that provides real-time statistics, winrates, and meta analysis for Dota 2 heroes.
 
@@ -24,7 +24,7 @@ This app uses public APIs to fetch up-to-date Dota 2 stats:
 - [OpenDota API](https://docs.opendota.com/)
 
 ---
-## Preview 
+## 🔮 Preview 
 ![image](https://github.com/user-attachments/assets/3a77e171-03a4-4c61-a92e-3aade822cb3d)
 
 ## 🛠 Tech Stack
