@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/11d3af3c-700e-45d8-b2d5-09bae68697f6)# 🎯 Dota 2 Stats
+# 🎯 Dota 2 Stats
 
 A web application that provides real-time statistics, winrates, and meta analysis for Dota 2 heroes.
 
