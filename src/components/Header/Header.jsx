@@ -18,19 +18,7 @@ export default function Header() {
                 <NavLink to="/" end className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}>
                     Heroes
                 </NavLink>
-                <NavLink to="/meta" className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}>
-                    Meta
-                </NavLink>
-                <NavLink
-                    to="/meta-escape"
-                    className={({ isActive }) => `header__link ${isActive ? "active" : ""}`}
-                >
-                    Meta Escape
-                </NavLink>
             </nav>
-            <a href="#" className="header__sign-in">
-                <img width={24} height={24} src={signIn} alt="sign in" />
-            </a>
         </header>
     );
 }
