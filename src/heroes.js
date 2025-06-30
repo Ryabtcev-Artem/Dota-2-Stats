@@ -3,9 +3,8 @@ async function getHeroesInfo(heroesTags) {
     let maxWinrate = 0;
     let maxMatches = 0;
     try {
-        const responseProTracker = await fetch(
-            "https://dota2protracker.com/api/heroes/list"
-        );        
+        const url = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://dota2protracker.com/api/heroes/list')}`;
+        const responseProTracker = await fetch(url);        
         const responseOpenDota = await fetch(
             "https://api.opendota.com/api/heroStats"
         );
