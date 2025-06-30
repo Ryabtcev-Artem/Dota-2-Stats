@@ -11,8 +11,7 @@ A web application that provides real-time statistics, winrates, and meta analysi
 - 🦸 Hero statistics and winrates
 - 📊 Current meta trends
 - ⚡ Fast and simple UI
-- 🛡️ CORS proxy to avoid cross-origin issues
-- 🚀 Hosted on Railway
+- 🚀 Hosted on Netlify
 
 ---
 
@@ -25,19 +24,10 @@ This app uses public APIs to fetch up-to-date Dota 2 stats:
 
 ---
 ## 🔮 Preview 
-![image](https://github.com/user-attachments/assets/3a77e171-03a4-4c61-a92e-3aade822cb3d)
+![image](https://github.com/user-attachments/assets/8e88a48d-eda2-4675-90e6-2b8edd222db7)
+
 
 ## 🛠 Tech Stack
 
-- Frontend: **Vite** + **JavaScript**
-- Backend: **Express** + **Axios** + **CORS**
-- Deployment: **Railway**
-
----
-
-## 📦 Server Endpoint
-
-You can fetch hero data from:
-
-```bash
-GET https://dota-2-stats-server-production.up.railway.app/api/heroes
+- Frontend: **Vite** + **React**
+- Deployment: **Vercel**
