@@ -2,7 +2,7 @@
 
 A web application that provides real-time statistics, winrates, and meta analysis for Dota 2 heroes.
 
-🔗 **Live Demo**: [https://dota-2-stats-production.up.railway.app](https://dota-2-stats-production.up.railway.app)
+🔗 **Live Demo**: [https://dota-2-stats.netlify.app/](https://dota-2-stats.netlify.app/)
 
 ---
 
